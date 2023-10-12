@@ -1,0 +1,249 @@
+/*....................................
+ main features
+ ..................................... */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.d-flex{
+    display: flex;
+}
+.d-flex-inline{
+    display: inline-flex;
+}
+.p-30{
+padding: 30px;
+}
+.px-8{
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+.py-8{
+padding-top: 8px;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+.c-b{
+    color: #3D464D;
+}
+.px-16{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.mr-8{
+    margin-right: 8px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+/* .....................................
+end of main features 
+........................................
+*/
+ /*.....................................
+  home nav
+  ......................................  */
+.main-container{
+    margin-top: 30px ;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.pt-4{
+        padding: 12px 16px 12px 16px;
+        margin-bottom: 30px;
+        position: relative;
+}
+.pt-4 span{
+    color:rgb(108, 117, 125);
+}
+ /*.....................................
+  end of home nav
+  ......................................  */
+   /*.....................................
+  photos and product reviews
+  ......................................  */
+.pt-5{
+display: flex;
+width: 100%;
+height: 100%;
+margin-bottom: 30px;
+}
+.pt-5-photo{
+ position: relative;
+ margin-right: 30px;
+ overflow-clip-margin: content-box ;
+}
+.pt-5-evalution-container{
+   padding: 30px 30px;
+}
+.product-name,.product-money{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color:  #3D464D;
+}
+.new-stars{
+    font-weight: 900;
+    color: #ffd333;
+    font-size: 80%;
+    margin-bottom: 24px;
+}
+.new-stars span{
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.pt-5-evalution-pargraph{
+    font-weight: 400;
+    color: #6C757D;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+.sizes-container,.colors-container{
+    margin-bottom: 24px;
+    margin-top: 20px;
+}
+.sizes,.colors{
+    display: flex;
+}
+.sizes span,.colors span{
+    font-weight:600;
+    font-size: 21px;
+    margin-right: 16px;
+}
+form{
+    display: block;
+}
+.custom-radio{
+    padding-top: 4px;
+    vertical-align: top;
+    display: inline-flex;
+    position: relative;
+    padding-left: 24px;
+    margin-right: 16px;
+}
+.input{
+    position: absolute;
+    left: 0;
+    width: 1rem;
+    height: 1.25rem;
+    padding-left: 1rem;
+}
+.cart-main{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-top: 8px;
+}
+.cart-number{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: stretch;
+    margin-right: 16px;
+    width: 130px;
+}
+/* .minus-button{
+} */
+.btn{
+    color :#212529;
+    background-color:#FFD333 ;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.375rem 0.75rem;
+    user-select: none;
+    text-transform:none ;
+    overflow: visible;
+    border: 1px solid transparent;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+.text-control{
+    display: block;
+    text-align: center;
+    flex: 1 1 auto;
+    height: calc(1.5em + 0.75rem + 2px);
+    background-clip: padding-box;
+    border: 0;
+    padding: 0.375rem 0.75rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    border-radius: 0;
+    position: relative;
+    width: 1%;
+    min-width: 0;
+}
+/*.....................................
+  end of photos and product reviews
+  ......................................  */
+  /*.....................................
+  description and information
+  ......................................  */
+.pt-6{
+   display: flex;
+   flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.navigation-item{
+    padding: 0.5rem 1rem;
+    color: #3D464D ;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #dee2e6;
+    display: block;
+    text-decoration: none;
+    border: 1px solid transparent;
+    margin-bottom: -1px;
+}
+.tab-pane h4{
+    font-weight: 500;
+    line-height: 1.2;
+    color: #3D464D;
+    display: block;
+    font-size: 24px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.tab-pane p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #6C757D;
+}
+/*.....................................
+  end of description and information
+  ......................................  */
+  /*.....................................
+  clothes section
+  ......................................  */
+.pt-7{
+    width: 100%;
+    padding: 48px 15px;
+}
+.pt-7-span{
+text-transform: uppercase;
+margin-bottom: 24px;
+position: relative;
+font-weight: 700;
+font-size: 31px;
+line-height: 1.2;
+color: #3D464D;
+padding-right: 16px;
+}
+/*.....................................
+  end of clothes section
+  ......................................  */

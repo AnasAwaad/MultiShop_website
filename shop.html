@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>E-commerce Project</title>
+        <!-- font Awesome  -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <!-- master css -->
+        <link rel="stylesheet" href="css/styleshop.css">
+    </head>
+    <body>
+        <header>
+            <div class="pt-1 ">
+                <div class="container">
+                    <div class="pt-1-content">
+                        <div class="pt-1-left">
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                        <div class="pt-1-right">
+                            <ul>
+                                <li>
+                                    <a href="#">EN</a>
+                                    <div class="lang drop-down">
+                                        <ul>
+                                            <li><a href="#">FR</a></li>
+                                            <li><a href="#">ER</a></li>
+                                            <li><a href="#">RU</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">USD</a>
+                                        <div class="coins drop-down">
+                                            <ul>
+                                                <li><a href="#">EUR</a></li>
+                                                <li><a href="#">GBP</a></li>
+                                                <li><a href="#">CAD</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">My Accout</a>
+                                        <div class="my-account drop-down">
+                                            <ul>
+                                                <li><a href="#">Sign in</a></li>
+                                                <li><a href="#">Sign up</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" pt-2">
+                    <div class="container">
+                        <div class="pt-2-content">
+                            <div class="pt-2-logo">
+                                <span class="left">multi</span>
+                                <span class="right">shop</span>
+                            </div>
+                            <div class="pt-2-search">
+                                <div class="search-box">
+                                    <i class="icon fa fa-search"></i>
+                                    <input class="txt-search" type="text"
+                                        placeholder="search for products">
+                                    <button class="btn-search"
+                                        id="search-button">Search</button>
+                                </div>
+                            </div>
+                            <div class="pt-2-contact">
+                                <p class="contact-us">customer service</p>
+                                <p class="contact-phone">01149480431</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-3">
+                    <div class="container">
+                        <div class="pt-3-content">
+                            <div class="category">
+                                <i class="icon-left fa fa-bars fa-lg"></i>
+                                <span class="category-name">category</span>
+                                <i class="icon-right fa fa-angle-down"></i>
+                                <div class="drop-down">
+                                    <ul>
+                                        <li><a class="border-bottom" href="#">Dresses</a></li>
+                                        <li><a class="border-bottom" href="#">shirts</a></li>
+                                        <li><a class="border-bottom" href="#">Jeans</a></li>
+                                        <li><a class="border-bottom" href="#">Swimwear</a></li>
+                                        <li><a class="border-bottom" href="#">Sleepwear</a></li>
+                                        <li><a class="border-bottom" href="#">Sportswear</a></li>
+                                        <li><a class="border-bottom" href="#">Jumpsuits</a></li>
+                                        <li><a class="border-bottom" href="#">Blazers</a></li>
+                                        <li><a class="border-bottom" href="#">Jackets</a></li>
+                                        <li><a href="#">Shoes</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bars-content">
+                                <i class="fas fa-bars fa-2x "></i>
+                            </div>
+                            <nav class="pt-3-nav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="#">Shop details</a></li>
+                                    <li><a href="#">
+                                            Pages
+                                            <i
+                                                class="icon-right fa fa-angle-down"></i>
+                                        </a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="pt-3-icons">
+                                <i class="fa fa-heart heart-icon"></i>
+                                <i class="fa fa-shopping-cart shopping-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container-fluid">
+                <div class="row px-xl-5">
+                    <div class="col-12">
+                        <div class="pt-4 bg-white">
+                            <button class="hhh">Home</button>
+                            <span> / </span>
+                            <button class="hhh">Shop</button>
+                            <span> / Shop List</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="midd">
+                <!-- Shop Sidebar Start -->
+                <div class="col-lg-3 col-md-4">
+                    <!-- Price Start -->
+                    <h5
+                        class="section-title position-relative text-uppercase mb-3"><span
+                            class="bg-secondary pr-3">Filter by price</span></h5>
+                    <div class="bg-light p-4 mb-30">
+                        <form>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" checked
+                                    id="price-all">
+                                <label class="custom-control-label"
+                                    for="price-all">All Price</label>
+                                <span class="badge border font-weight-normal">1000</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="price-1">
+                                <label class="custom-control-label"
+                                    for="price-1">$0 - $100</label>
+                                <span class="badge border font-weight-normal">150</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="price-2">
+                                <label class="custom-control-label"
+                                    for="price-2">$100 - $200</label>
+                                <span class="badge border font-weight-normal">295</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="price-3">
+                                <label class="custom-control-label"
+                                    for="price-3">$200 - $300</label>
+                                <span class="badge border font-weight-normal">246</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="price-4">
+                                <label class="custom-control-label"
+                                    for="price-4">$300 - $400</label>
+                                <span class="badge border font-weight-normal">145</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="price-5">
+                                <label class="custom-control-label"
+                                    for="price-5">$400 - $500</label>
+                                <span class="badge border font-weight-normal">168</span>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Price End -->
+
+                    <!-- Color Start -->
+                    <h5
+                        class="section-title position-relative text-uppercase mb-3"><span
+                            class="bg-secondary pr-3">Filter by color</span></h5>
+                    <div class="bg-light p-4 mb-30">
+                        <form>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" checked
+                                    id="color-all">
+                                <label class="custom-control-label"
+                                    for="price-all">All Color</label>
+                                <span class="badge border font-weight-normal">1000</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="color-1">
+                                <label class="custom-control-label"
+                                    for="color-1">Black</label>
+                                <span class="badge border font-weight-normal">150</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="color-2">
+                                <label class="custom-control-label"
+                                    for="color-2">White</label>
+                                <span class="badge border font-weight-normal">295</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="color-3">
+                                <label class="custom-control-label"
+                                    for="color-3">Red</label>
+                                <span class="badge border font-weight-normal">246</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="color-4">
+                                <label class="custom-control-label"
+                                    for="color-4">Blue</label>
+                                <span class="badge border font-weight-normal">145</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="color-5">
+                                <label class="custom-control-label"
+                                    for="color-5">Green</label>
+                                <span class="badge border font-weight-normal">168</span>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Color End -->
+
+                    <!-- Size Start -->
+                    <h5
+                        class="section-title position-relative text-uppercase mb-3"><span
+                            class="bg-secondary pr-3">Filter by size</span></h5>
+                    <div class="bg-light p-4 mb-30">
+                        <form>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" checked
+                                    id="size-all">
+                                <label class="custom-control-label"
+                                    for="size-all">All Size</label>
+                                <span class="badge border font-weight-normal">1000</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="size-1">
+                                <label class="custom-control-label" for="size-1">XS</label>
+                                <span class="badge border font-weight-normal">150</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="size-2">
+                                <label class="custom-control-label" for="size-2">S</label>
+                                <span class="badge border font-weight-normal">295</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="size-3">
+                                <label class="custom-control-label" for="size-3">M</label>
+                                <span class="badge border font-weight-normal">246</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="size-4">
+                                <label class="custom-control-label" for="size-4">L</label>
+                                <span class="badge border font-weight-normal">145</span>
+                            </div>
+                            <div
+                                class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                                <input type="checkbox"
+                                    class="custom-control-input" id="size-5">
+                                <label class="custom-control-label" for="size-5">XL</label>
+                                <span class="badge border font-weight-normal">168</span>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Size End -->
+                </div>
+                <!-- Shop Sidebar End -->
+                <div class="container1">
+                    <div class="feature-content">
+                        <div class="feature-card">
+                            <div class="feature-image">
+                                <img src="images/product-1.jpg" alt>
+                                <div class="feature-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#"><i
+                                                class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon sec-icon fa fa-heart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon third-icon fa fa-sync fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon forth-icon fa fa-search fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-info">
+                                <p class="feature-title"><a href="#">Product
+                                        Name
+                                        Goes Here</a></p>
+                                <p class="feature-amount">$123.00 <del>$123.00</del></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>(99)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-image">
+                                <img src="images/product-2.jpg" alt>
+                                <div class="feature-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#"><i
+                                                class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon sec-icon fa fa-heart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon third-icon fa fa-sync fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon forth-icon fa fa-search fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-info">
+                                <p class="feature-title"><a href="#">Product
+                                        Name
+                                        Goes Here</a></p>
+                                <p class="feature-amount">$123.00 <del>$123.00</del></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>(99)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-image">
+                                <img src="images/product-3.jpg" alt>
+                                <div class="feature-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#"><i
+                                                class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon sec-icon fa fa-heart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon third-icon fa fa-sync fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon forth-icon fa fa-search fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-info">
+                                <p class="feature-title"><a href="#">Product
+                                        Name
+                                        Goes Here</a></p>
+                                <p class="feature-amount">$123.00 <del>$123.00</del></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>(99)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-image">
+                                <img src="images/product-4.jpg" alt>
+                                <div class="feature-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#"><i
+                                                class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon sec-icon fa fa-heart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon third-icon fa fa-sync fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon forth-icon fa fa-search fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-info">
+                                <p class="feature-title"><a href="#">Product
+                                        Name
+                                        Goes Here</a></p>
+                                <p class="feature-amount">$123.00 <del>$123.00</del></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>(99)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-image">
+                                <img src="images/product-5.jpg" alt>
+                                <div class="feature-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#"><i
+                                                class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon sec-icon fa fa-heart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon third-icon fa fa-sync fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon forth-icon fa fa-search fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-info">
+                                <p class="feature-title"><a href="#">Product
+                                        Name
+                                        Goes Here</a></p>
+                                <p class="feature-amount">$123.00 <del>$123.00</del></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>(99)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-image">
+                                <img src="images/product-6.jpg" alt>
+                                <div class="feature-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#"><i
+                                                class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon sec-icon fa fa-heart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon third-icon fa fa-sync fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon forth-icon fa fa-search fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-info">
+                                <p class="feature-title"><a href="#">Product
+                                        Name
+                                        Goes Here</a></p>
+                                <p class="feature-amount">$123.00 <del>$123.00</del></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>(99)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-image">
+                                <img src="images/product-7.jpg" alt>
+                                <div class="feature-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#"><i
+                                                class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon sec-icon fa fa-heart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon third-icon fa fa-sync fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon forth-icon fa fa-search fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-info">
+                                <p class="feature-title"><a href="#">Product
+                                        Name
+                                        Goes Here</a></p>
+                                <p class="feature-amount">$123.00 <del>$123.00</del></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>(99)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-image">
+                                <img src="images/product-8.jpg" alt>
+                                <div class="feature-overlay">
+                                    <div class="overlay-content">
+                                        <a href="#"><i
+                                                class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon sec-icon fa fa-heart fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon third-icon fa fa-sync fa-lg"></i></a>
+                                        <a href="#"><i
+                                                class="icon forth-icon fa fa-search fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-info">
+                                <p class="feature-title"><a href="#">Product
+                                        Name
+                                        Goes Here</a></p>
+                                <p class="feature-amount">$123.00 <del>$123.00</del></p>
+                                <div class="stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>(99)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <button class="prev">Previous</button>
+                        <button class="page active">1</button>
+                        <button class="page">2</button>
+                        <button class="page">3</button>
+                        <button class="next">Next</button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="contact">
+                            <h3 class="contact-title">GET IN TOUCH</h3>
+                            <p class="contact-desc">No dolore ipsum accusam
+                                no lorem. Invidunt sed clita kasd clita et
+                                et dolor sed dolor.
+                                Rebum tempor no vero est magna amet no</p>
+                            <ul>
+                                <li>
+                                    <i class="icon fa fa-map-marker-alt"></i>
+                                    <span>123 Street, New York, USA</span>
+                                </li>
+                                <li>
+                                    <i class="icon fa fa-envelope"></i>
+                                    <span>info@example.com</span>
+                                </li>
+                                <li>
+                                    <i class="icon fa fa-phone-alt"></i>
+                                    <span>+012 345 67890</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="quick-shop">
+                            <h3 class="quick-title">QUICK SHOP</h3>
+                            <ul>
+                                <li><i class="fa fa-angle-right"></i><a
+                                        href="#">Home</a></li>
+                                <li><i class="fa fa-angle-right"></i><a
+                                        href="#">Our Shop</a></li>
+                                <li><i class="fa fa-angle-right"></i><a
+                                        href="#">Shop Detail</a></li>
+                                <li><i class="fa fa-angle-right"></i><a
+                                        href="#">Shopping Cart</a></li>
+                                <li><i class="fa fa-angle-right"></i><a
+                                        href="#">Checkout</a></li>
+                                <li><i class="fa fa-angle-right"></i><a
+                                        href="#">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="myaccount">
+                            <h3 class="myaccount-title">MY ACCOUNT</h3>
+                            <ul>
+                                <li><i class="fa fa-angle-right"></i><a
+                                        href="#">Home</a></li>
+                                <li><i class="fa fa-angle-right"></i><a
+                                        href="#">Our Shop</a></li>
+                                <li><i class="fa fa-angle-right"></i><a
+                                        href="#">Shop Detail</a></li>
+                                <li><i class="fa fa-angle-right"></i><a
+                                        href="#">Shopping Cart</a></li>
+                                <li><i class="fa fa-angle-right"></i><a
+                                        href="#">Checkout</a></li>
+                                <li><i class="fa fa-angle-right"></i><a
+                                        href="#">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="seller">
+                            <h3 class="seller-title">NEWSLETTER</h3>
+                            <p class="seller-desc">Duo stet tempor ipsum sit
+                                amet magna ipsum tempor est</p>
+
+                            <input class="seller-input" type="text"
+                                placeholder="Your Email Address">
+                            <button class="btn-seller">Sign Up</button>
+                            <p class="seller-subtitle">FOLLOW US</p>
+                            <div class="icons">
+                                <i class="icon fab fa-facebook-f fa-lg"></i>
+                                <i class="icon fab fa-twitter fa-lg"></i>
+                                <i class="icon fab fa-linkedin fa-lg"></i>
+                                <i class="icon fab fa-instagram fa-lg"></i>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="footer-pt-2">
+                        <p>&copy; <span class="domain"><a href="#">Domain</a></span>All
+                            Rights Reserved. Designed by <span class="codex"><a
+                                    href="#">HTML Codex</a></span></p>
+                        <img src="images/payments.png" alt>
+                    </div>
+                </div>
+            </section>
+        </body>
+
+    </html>

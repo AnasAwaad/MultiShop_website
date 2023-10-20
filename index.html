@@ -106,14 +106,10 @@
       </div>
     </div>
 
-    <div class="pt-3">
+    <div class="pt-3 fixed">
 
       <div class="container">
         <div class="pt-3-content">
-
-
-
-
 
           <div class="category">
 
@@ -138,8 +134,6 @@
 
             </div>
           </div>
-
-
           <div class="bars-content">
             <i class="fas fa-bars fa-2x "></i>
           </div>
@@ -147,7 +141,7 @@
           <nav class="pt-3-nav">
             <ul>
               <li><a href="#">Home</a></li>
-              <li><a href="#">Shop</a></li>
+              <li><a href="shop.html">Shop</a></li>
               <li><a href="#">Shop details</a></li>
               <li><a href="#">
                   Pages
@@ -160,7 +154,8 @@
 
           <div class="pt-3-icons">
             <i class="fa fa-heart heart-icon"></i>
-            <i class="fa fa-shopping-cart shopping-icon"></i>
+            <i class="fa fa-shopping-cart shopping-icon" id="shopping-cart-icon"></i>
+            
           </div>
           <ul id="login-register">
             <li><a href="register.html">Register</a></li>
@@ -171,10 +166,21 @@
             <li ><a href="#" id="user"></a></li>
             <li><a href="#" id="logout">logout</a></li>
           </ul>
-
-
         </div>
       </div>
+    </div>
+    <div class="shopping-cart">
+      <div class="cart">
+        <h2>shopping cart</h2>
+        <div class="item">
+          <div class="item-info">
+            <h3>item title</h3>
+            <p>1 x $99.00</p>
+          </div>
+          <img src="images/cat-1.jpg" alt="">
+        </div>
+      </div>
+      <div class="overlay"></div>
     </div>
   </header>
 
@@ -267,104 +273,7 @@
         <div class="category-line"></div>
       </div>
 
-      <div class="category-content">
-
-        <div class="category-card">
-          <img src="images/cat-1.jpg" alt="">
-          <div class="category-info">
-            <p class="category-name">category name</p>
-            <p class="category-desc">100 products</p>
-          </div>
-        </div>
-
-        <div class="category-card">
-          <img src="images/cat-2.jpg" alt="">
-          <div class="category-info">
-            <p class="category-name">category name</p>
-            <p class="category-desc">100 products</p>
-          </div>
-        </div>
-
-        <div class="category-card">
-          <img src="images/cat-3.jpg" alt="">
-          <div class="category-info">
-            <p class="category-name">category name</p>
-            <p class="category-desc">100 products</p>
-          </div>
-        </div>
-
-        <div class="category-card">
-          <img src="images/cat-4.jpg" alt="">
-          <div class="category-info">
-            <p class="category-name">category name</p>
-            <p class="category-desc">100 products</p>
-          </div>
-        </div>
-
-        <div class="category-card">
-          <img src="images/cat-2.jpg" alt="">
-          <div class="category-info">
-            <p class="category-name">category name</p>
-            <p class="category-desc">100 products</p>
-          </div>
-        </div>
-
-        <div class="category-card">
-          <img src="images/cat-4.jpg" alt="">
-          <div class="category-info">
-            <p class="category-name">category name</p>
-            <p class="category-desc">100 products</p>
-          </div>
-        </div>
-
-        <div class="category-card">
-          <img src="images/cat-1.jpg" alt="">
-          <div class="category-info">
-            <p class="category-name">category name</p>
-            <p class="category-desc">100 products</p>
-          </div>
-        </div>
-
-        <div class="category-card">
-          <img src="images/cat-3.jpg" alt="">
-          <div class="category-info">
-            <p class="category-name">category name</p>
-            <p class="category-desc">100 products</p>
-          </div>
-        </div>
-
-        <div class="category-card">
-          <img src="images/cat-1.jpg" alt="">
-          <div class="category-info">
-            <p class="category-name">category name</p>
-            <p class="category-desc">100 products</p>
-          </div>
-        </div>
-
-        <div class="category-card">
-          <img src="images/cat-3.jpg" alt="">
-          <div class="category-info">
-            <p class="category-name">category name</p>
-            <p class="category-desc">100 products</p>
-          </div>
-        </div>
-
-        <div class="category-card">
-          <img src="images/cat-4.jpg" alt="">
-          <div class="category-info">
-            <p class="category-name">category name</p>
-            <p class="category-desc">100 products</p>
-          </div>
-        </div>
-
-        <div class="category-card">
-          <img src="images/cat-2.jpg" alt="">
-          <div class="category-info">
-            <p class="category-name">category name</p>
-            <p class="category-desc">100 products</p>
-          </div>
-        </div>
-
+      <div class="category-content" >
       </div>
 
     </div>
@@ -378,207 +287,8 @@
     <div class="container">
 
 
-      <div class="feature-content">
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-1.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-2.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-3.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-4.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-5.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-6.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-7.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-8.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
+      <div class="feature-content" id="featureCards">
+        
 
       </div>
     </div>
@@ -624,210 +334,7 @@
       <div class="category-line"></div>
     </div>
     <div class="container">
-
-
-      <div class="feature-content">
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-1.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-2.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-3.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-4.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-5.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-6.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-7.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-image">
-            <img src="images/product-8.jpg" alt="">
-            <div class="feature-overlay">
-              <div class="overlay-content">
-                <a href="#"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></a>
-                <a href="#"><i class="icon sec-icon fa fa-heart fa-lg"></i></a>
-                <a href="#"><i class="icon third-icon fa fa-sync fa-lg"></i></a>
-                <a href="#"><i class="icon forth-icon fa fa-search fa-lg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="feature-info">
-            <p class="feature-title"><a href="#">Product Name Goes Here</a></p>
-            <p class="feature-amount">$123.00 <del>$123.00</del></p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <span>(99)</span>
-            </div>
-          </div>
-        </div>
-
+      <div class="feature-content" id="featureContent">
       </div>
     </div>
   </section>

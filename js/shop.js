@@ -7,6 +7,7 @@ bar.addEventListener("click", function () {
   } else {
     barlinks.style.display = "none";
   }
+  
 });
 
 let loginRegister = document.querySelector("#login-register");

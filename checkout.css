@@ -1,0 +1,122 @@
+.identify{
+    background-color: white;
+    padding: 15px 20px;
+    margin: 20px 30px
+}
+.check1,.check11{
+    width: 60%;
+    float: left;
+    background-color: white;
+    margin-left: 29px;
+    
+}
+.check11{
+    margin-top: 30px;
+}
+.bi{
+    background-color: #f5f5f5;
+    font-family: cursive;
+    font-size: 20px;
+    width: 100;
+    display: block;
+    width: 100%;
+    padding-left: 1px;
+    margin-bottom: 5px;
+}
+.data{
+    width: 85%;
+    color: darkgray;
+    margin: 13px 29px;
+}
+.data1{
+    float: left;
+}
+.data2{
+    float: right;
+}
+.la{
+    display: block;
+    font-size: 20px;
+    margin:5px 10px;
+}
+.in{
+    display: block;
+    font-size: 20px;
+    margin: 10px;
+}
+.int{
+    display: block;
+    font-size: 20px;
+    margin: 10px;
+    padding-right: 102px;
+    padding-block: 1px;
+    
+}
+.check2,.check22{
+    width: 26%;
+    float: right;
+    background-color: white;
+    margin-right: 110px;
+}
+.ch{
+    float: left;
+    margin-left: -257px;
+    margin-top: 377px;
+    padding: 5px;
+}
+.create{
+    accent-color: #ffd333;
+}
+.hey{
+    padding: 5px;
+}
+.ll{
+    display: block;
+    font-size: 17px;
+}
+.pp{
+    display: block;
+}
+.pl{
+    padding-left: 65px;
+}
+.last{
+    margin: 20px;
+}
+.last1{
+    padding: 3px 3px;
+}
+.pll{
+    padding-left: 127px;
+}
+.lll{
+    font-size: 22px;
+}
+.check22{
+    margin-top: 50px;
+}
+.rr{
+    accent-color:#ffd333 ;
+}
+
+.las{
+    display: block;
+    padding: 17px;
+    color: darkgray;
+}
+.place{
+    background-color: #ffd333;
+    color: #F5F5E5;
+    font-weight: bold;
+    padding-right: 10px;
+    text-align: center;
+    margin-top: 20px;
+    width: 70%;
+    padding: 15px;
+    margin-left: 36px;
+    margin-bottom: 15px;
+}
+.foot{
+    margin-top: 1100px;
+    width: 100%;
+}

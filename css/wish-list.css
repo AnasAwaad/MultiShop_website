@@ -1,0 +1,30 @@
+
+
+.wish-list-section  img{
+  width:100px;
+  height: 100px;
+}
+
+.wish-list-section  .item-title{
+  flex-basis: 400px;
+}
+
+.wish-list-section  .item-price{
+  flex:1;
+}
+
+.wish-list-section  .item-remove{
+  flex-basis: 100px;
+  text-align: right;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.wish-list-section table tr td:first-child{
+  display: flex;
+  align-items: center;
+}
+
+.wish-list-section table tr td{
+  line-height:100px
+}

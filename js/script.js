@@ -29,7 +29,6 @@ logout.addEventListener("click", function () {
 
 //feature section
 
-
 let productsCard = document.querySelector("#featureCards");
 let featureCards = document.querySelector("#featureContent");
 function drowProductsUI() {
@@ -42,9 +41,9 @@ function drowProductsUI() {
     <div class="feature-overlay">
       <ul class="overlay-content">
         <li  onclick="addCart(${item.id})"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></li>
-        <li ><i class="icon sec-icon fa fa-heart fa-lg"></i></li>
-        <li ><i class="icon third-icon fa fa-sync fa-lg"></i></li>
-        <li onclick="search('+${item.title }+')" ><i class="icon forth-icon fa fa-search fa-lg"  ></i></li>
+        <li onclick="addToWishList(${item.id})"><i class="icon sec-icon fa fa-heart fa-lg"></i></li>
+        <li onclick="details()"><i class="icon third-icon fa fa-sync fa-lg"></i></li>
+        <li onclick="search('+${item.title}+')" ><i class="icon forth-icon fa fa-search fa-lg"  ></i></li>
       </ul>
     </div>
   </div>
@@ -73,7 +72,6 @@ let categoryCard = document.querySelector(
   ".category-section .category-content"
 );
 
-
 function displayAllCategory() {
   let card = categoryProducts
     .map((item) => {
@@ -98,7 +96,6 @@ let shoppingCartIcon = document.querySelector("#shopping-cart-icon");
 let shoppingCartIconval = document.querySelector("#shopping-cart-icon span");
 let totPriceDom = document.querySelector(".shopping-cart .tot-price .price");
 
-
 function getFromStorage() {
   let productsInCart = JSON.parse(localStorage.getItem("ProductsInCart"));
   if (localStorage.getItem("ProductsInCart")) {
@@ -114,7 +111,7 @@ function getFromStorage() {
       totPrice += element.amount * element.price;
     });
     totPriceDom.innerHTML = "$" + totPrice.toFixed(2);
-    
+
     productsInCart.map((item) => {
       shoppingCartItems.innerHTML += `
       <div class="item">
@@ -127,7 +124,6 @@ function getFromStorage() {
       </div>
     </div>`;
     });
-    
   }
 }
 
@@ -233,28 +229,52 @@ shoppingCartIcon.addEventListener("click", function () {
   }
 });
 
-// let searchProduct = document.getElementById("search-for-product");
-// searchProduct.addEventListener("click",search)
-
-
 let txtSearch = document.getElementById("txt-search");
-txtSearch.addEventListener("keyup",function(e){
-  if(e.keyCode===13){
-    search( e.target.value);
+txtSearch.addEventListener("keyup", function (e) {
+  if (e.keyCode === 13) {
+    search(e.target.value);
   }
-})
+});
 
-
-
-
-// search 
-function search(title){
+// search
+function search(title) {
   title = title.substring(1, title.length - 1);
-  console.log(title)
-  let item = products.filter(item => item.title.indexOf(title)!=-1);
-  if(item){
-    window.location= "search.html"
+  console.log(title);
+  let item = products.filter((item) => item.title.indexOf(title) != -1);
+  if (item) {
+    window.location = "search.html";
     localStorage.setItem("searchProducts", JSON.stringify(item));
   }
-  
 }
+
+function details() {
+  window.location = "shop details.html";
+}
+
+let heartIcon = document.querySelector(".heart-icon span");
+heartIcon.addEventListener("click",function(){
+  window.location = "wishlist.html";
+})
+function addToWishList(id) {
+  let itemsInDb = JSON.parse(localStorage.getItem("wishList")) || [];
+  let choosenItem = products.find((item) => item.id == id);
+
+  if (itemsInDb) {
+    let item = itemsInDb.find((i) => i.id == choosenItem.id);
+    if (item) {
+      console.log("exist in wish list");
+    } else {
+      itemsInDb.push(choosenItem);
+    }
+  } else {
+    itemsInDb.push(choosenItem);
+  }
+  localStorage.setItem("wishList", JSON.stringify(itemsInDb));
+  calcWishList();
+}
+
+function calcWishList() {
+  let itemsInDb = JSON.parse(localStorage.getItem("wishList")) || [];
+  heartIcon.innerHTML = itemsInDb.length;
+}
+calcWishList();

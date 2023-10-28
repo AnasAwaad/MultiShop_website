@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>E-commerce Project</title>
+    <!-- font Awesome  -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- master css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/detail.css">
+
+  </head><body>
+    <header>
+  
+      <div class="pt-1 ">
+        <div class="container">
+          <div class="pt-1-content">
+            <div class="pt-1-left">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+  
+            <div class="pt-1-right">
+              <ul>
+  
+                <li>
+                  <a href="#">EN</a>
+                  <div class="lang drop-down">
+                    <ul>
+                      <li><a href="#">FR</a></li>
+                      <li><a href="#">ER</a></li>
+                      <li><a href="#">RU</a></li>
+  
+                    </ul>
+                </li>
+                <li>
+                  <a href="#">USD</a>
+                  <div class="coins drop-down">
+                    <ul>
+                      <li><a href="#">EUR</a></li>
+                      <li><a href="#">GBP</a></li>
+                      <li><a href="#">CAD</a></li>
+  
+                    </ul>
+                  </div>
+                </li>
+  
+                <li>
+                  <a href="#">My Accout</a>
+                  <div class="my-account drop-down">
+                    <ul>
+                      <li><a href="#">Sign in</a></li>
+                      <li><a href="#">Sign up</a> </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class=" pt-2">
+        <div class="container">
+          <div class="pt-2-content">
+            <div class="pt-2-logo">
+              <span class="left">multi</span>
+              <span class="right">shop</span>
+  
+            </div>
+  
+  
+  
+  
+  
+            <div class="pt-2-search">
+  
+              <div class="search-box">
+                <i class="icon fa fa-search"></i>
+                <input class="txt-search" type="text" placeholder="search for products">
+                <button class="btn-search" id="search-button">Search</button>
+              </div>
+  
+            </div>
+  
+  
+            <div class="pt-2-contact">
+              <p class="contact-us">customer service</p>
+              <p class="contact-phone">01129426838</p>
+            </div>
+          </div>
+  
+        </div>
+      </div> 
+      <div class="pt-3">
+
+        <div class="container">
+          <div class="pt-3-content">
+  
+  
+  
+  
+  
+            <div class="category">
+  
+              <i class="icon-left fa fa-bars fa-lg"></i>
+              <span class="category-name">category</span>
+              <i class="icon-right fa fa-angle-down"></i>
+              <div class="drop-down">
+                <ul>
+                  <li><a class="border-bottom" href="#">Dresses</a></li>
+                  <li><a class="border-bottom" href="#">shirts</a></li>
+                  <li><a class="border-bottom" href="#">Jeans</a></li>
+                  <li><a class="border-bottom" href="#">Swimwear</a></li>
+                  <li><a class="border-bottom" href="#">Sleepwear</a></li>
+                  <li><a class="border-bottom" href="#">Sportswear</a></li>
+                  <li><a class="border-bottom" href="#">Jumpsuits</a></li>
+                  <li><a class="border-bottom" href="#">Blazers</a></li>
+                  <li><a class="border-bottom" href="#">Jackets</a></li>
+                  <li><a href="#">Shoes</a></li>
+  
+                </ul>
+  
+  
+              </div>
+            </div>
+  
+  
+            <div class="bars-content">
+              <i class="fas fa-bars fa-2x "></i>
+            </div>
+  
+            <nav class="pt-3-nav">
+              <ul>
+                <li><a href="index.html" title="go to home">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="shop details.html">Shop details</a></li>
+                <li><a href="cart.html">
+                    Pages
+                    <i class="icon-right fa fa-angle-down"></i>
+                  </a></li>
+                <li><a href="contact(1).html">Contact</a></li>
+              </ul>
+  
+            </nav>
+  
+            <div class="pt-3-icons">
+              <i class="fa fa-heart heart-icon"></i>
+              <i class="fa fa-shopping-cart shopping-icon"></i>
+            </div>
+  
+  
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-container">
+        <div class="pt-4 bg-white">
+            Home / Shop<span> / Shop Details</span>
+               </div>
+        <div class="pt-5">
+            <div class="pt-5-photo">
+                <div class="pt-5-photo-img" >
+                <img  src="images/product-1.jpg" alt="images" class="slider-image">
+                <a class="carsoul-prev left" href="#" onclick="prev()" >
+                  <i class="fa fa-2x fa-angle-left c-b" ></i>
+                </a>
+                <a class="carsoul-next right-0" href="#" onclick="next()">
+                  <i class="fa fa-2x fa-angle-right c-b" ></i>
+                </a>
+                </div>
+            </div>  
+           <div class="pt-5-evalution bg-white">
+            <div class="pt-5-evalution-container" >
+              <h3 class="product-name c-black">product name goes Here</h3>
+
+              <div class="new-stars ">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span class="c-b">(99) reviews</span>
+              </div>
+              <span class="product-money c-b"> $150.00</span>
+              <p class="pt-5-evalution-pargraph c-b">
+                Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr er ea. Sanc ipsum et, labore clita lorem magna duo dolor no sea Nonumyz</p>
+              <div class="sizes-container">
+                <div class="sizes c-b">
+                <span>sizes : </span> 
+                <form >
+                  <div class="custom-radio">
+                      <input type="radio" class="input" id="box1" name="size">
+                      <label class="label" >XS</label>
+                  </div>
+                  <div class="custom-radio">
+                      <input type="radio" class="input" id="box2" name="size">
+                      <label class="label">S</label>
+                  </div>
+                  <div class="custom-radio">
+                      <input type="radio" class="input" id="box3" name="size">
+                      <label class="label" >M</label>
+                  </div>
+                  <div class="custom-radio">
+                      <input type="radio" class="input" id="box4" name="size">
+                      <label class="label" >L</label>
+                  </div>
+                  <div class="custom-radio">
+                      <input type="radio" class="input" id="box5" name="size">
+                      <label class="label" >XL</label>
+                  </div>
+              </form>
+              </div>   
+            </div>
+            <div class="colors-container">
+              <div class="colors c-b">
+                <span>colors : </span> 
+                <form >
+                  <div class="custom-radio">
+                      <input type="radio" class="input" id="box1" name="size">
+                      <label class="label" >Red</label>
+                  </div>
+                  <div class="custom-radio">
+                      <input type="radio" class="input" id="box2" name="size">
+                      <label class="label">Green</label>
+                  </div>
+                  <div class="custom-radio">
+                      <input type="radio" class="input" id="box3" name="size">
+                      <label class="label" >Blue</label>
+                  </div>
+                  <div class="custom-radio">
+                      <input type="radio" class="input" id="box4" name="size">
+                      <label class="label" >Black</label>
+                  </div>
+                  <div class="custom-radio">
+                      <input type="radio" class="input" id="box5" name="size">
+                      <label class="label" >White</label>
+                  </div>
+              </form>
+              </div>   
+            </div>
+            <div class="cart-main">
+              <div class="cart-number">
+                <div class="input-btn">
+                  <button class="btn minus-button ">
+                    <i class="fa fa-minus">
+
+                    </i>
+                  </button>
+                </div>
+                  <input type="text" class="text-control c-b " value="1" >
+                <div class="input-btn">
+                  <button class="btn minus-button c-b">
+                    <i class="fa fa-plus ">
+
+                    </i>
+                  </button>
+                </div>
+              </div>
+                <button class="btn px-16 ">
+                  <i class="fa fa-shopping-cart mr-8">
+
+                  </i>
+                  Add To Cart
+                </button>
+            </div>
+            <div class="d-flex py-8">
+              <strong class="mr-8 c-b">
+                Share on : 
+              </strong>
+              <div class="d-flex-inline">
+                <a href="#" class="c-b px-8">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="c-b px-8">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="c-b px-8">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="c-b px-8">
+                  <i class="fab fa-pinterest"></i>
+                </a>
+              </div>
+            </div>
+             </div>             
+            </div>
+        </div>  
+         <div class="pt-6">
+          <div class="bg-white p-30 " >
+            <ul class="tabs">
+              <li class="active"  href="#tab1" data-content=".tab-pane1" >Description</li>
+              <li    href="#tab2" data-content=".tab-pane2">Information</li>
+              <li    href="#tab3" data-content=".tab-pane3">Reviews </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane1" id="tab1">
+                <h4 class="mb-16">
+                  product production
+                </h4>
+                <p class=" mb-16">
+                  Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea
+                  . Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero
+                  diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt 
+                  sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam.
+                   Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum 
+                   accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est,
+                    sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum
+                     kasd eos consetetur at sit rebum, diam kasd invidunt
+                   tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.
+                </p>
+                <p>
+                  Dolore magna est eirmod sanctus dolor, amet diam et eirmod et ipsum. Amet dolore 
+                  tempor consetetur sed lorem dolor sit lorem tempor.
+                   Gubergren amet amet labore sadipscing clita clita diam clita. Sea amet et sed 
+                   ipsum lorem elitr et, amet et labore voluptua sit rebum. Ea
+                   erat sed et diam takimata sed justo. Magna takimata justo et amet magna et.
+                </p>
+              </div>
+              <div class="tab-pane2" id="tab2">
+                <h4 class="mb-16">
+                  Additional Information
+                </h4>
+                <p class=" mb-16">
+                  Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt
+                   duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et
+                   , lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata
+                    kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam 
+                    eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem 
+                    elitr sanctus eirmod takimata dolor ea invidunt.
+
+                </p>
+              </div>
+              <div class="tab-pane3" id="tab2">
+                <h4 class="mb-16">
+                  Leave a review
+                </h4>
+                <p class=" mb-16">
+                  Your email address will not be published. Required fields are marked * you should enter a reall information or you will Exposed to the legal issues
+
+                   
+                  <div class="new-stars ">
+                    <span class="c-b" style="font-size: 18px; color:#6C757D; font-weight: 400;"> Your Rating * : </span>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  
+                  </div>
+                  
+               <div class="form-group mb-16 c-b  font-20" >
+                <label for="message">Your Review *</label>
+                <textarea name="message" class="form-control" cols="30" rows="5"></textarea>
+               </div>
+               <div class="form-group mb-16  c-b  font-20" >
+                <label for="message">Your Name *</label>
+                <input type="text" class="form-control" id="name"></input>
+               </div>
+               <div class="form-group mb-16  c-b font-20" >
+                <label for="email">Your Email *</label>
+                <input type="email" class="form-control" id="email"></input>
+               </div>
+              </p>
+              </div>
+            </div>
+          </div>
+        </div> 
+     
+        <div class="pt-7">
+          <span class="pt-7-span">
+            you may also like 
+          </span>
+          </div>
+      </div>
+    
+      <section class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="contact">
+              <h3 class="contact-title">GET IN TOUCH</h3>
+              <p class="contact-desc">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor.
+                Rebum tempor no vero est magna amet no</p>
+              <ul>
+                <li>
+                  <i class="icon fa fa-map-marker-alt"></i>
+                  <span>123 Street, New York, USA</span>
+                </li>
+                <li>
+                  <i class="icon fa fa-envelope"></i>
+                  <span>info@example.com</span>
+                </li>
+                <li>
+                  <i class="icon fa fa-phone-alt"></i>
+                  <span>+012 345 67890</span>
+                </li>
+              </ul>
+            </div>
+    
+            <div class="quick-shop">
+              <h3 class="quick-title">QUICK SHOP</h3>
+              <ul>
+                <li><i class="fa fa-angle-right"></i><a href="#">Home</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">Our Shop</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">Shop Detail</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">Shopping Cart</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">Checkout</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">Contact Us</a></li>
+    
+              </ul>
+            </div>
+    
+            <div class="myaccount">
+            <h3 class="myaccount-title">MY ACCOUNT</h3>
+              <ul>
+                <li><i class="fa fa-angle-right"></i><a href="#">Home</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">Our Shop</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">Shop Detail</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">Shopping Cart</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">Checkout</a></li>
+                <li><i class="fa fa-angle-right"></i><a href="#">Contact Us</a></li>
+    
+              </ul>
+            </div>
+            
+            <div class="seller">
+              <h3 class="seller-title">NEWSLETTER</h3>
+              <p  class="seller-desc">Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
+              
+              <input class="seller-input" type="text" placeholder="Your Email Address">
+              <button class="btn-seller">Sign Up</button>
+              <p class="seller-subtitle">FOLLOW US</p>
+              <div class="icons">
+                <i class="icon fab fa-facebook-f fa-lg"></i>
+                <i class="icon fab fa-twitter fa-lg"></i>
+                <i class="icon fab fa-linkedin fa-lg"></i>
+                <i class="icon fab fa-instagram fa-lg"></i>
+                
+              </div>
+            </div>
+    
+          </div>
+          <hr>
+          <div class="footer-pt-2">
+            <p>&copy; <span class="domain"><a href="#">Domain</a></span>All Rights Reserved. Designed by <span class="codex"><a href="#">HTML Codex</a></span></p>
+             <img src="images/payments.png" alt="">
+          </div>
+        </div>
+      </section>
+      <script src="js/shop details.js"></script>
+</body>  
+</html>

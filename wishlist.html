@@ -24,6 +24,7 @@
 
   <!-- master css -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/wish-list.css">
 </head>
 
 <body>
@@ -208,197 +209,38 @@
     </div>
   </div>
 
-  <section class="home">
-    <!-- Carousel -->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-      <!-- Indicators/dots -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-      </div>
-
-      <!-- The slideshow/carousel -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container">
-          <div class="item-1">
-            <div class="item-1-desc">
-              <div class="item-info">Starting at $274</div>
-              <div class="item-title">The Best tablet collection 2023</div>
-              <div class="item-desc">Exclusive offer -35% off this week</div>
-              <div class="btn btn-light">Shop Now</div>
-            </div>
-            <img src="images/slider-img-1.png" alt="Los Angeles" class="d-block w-100">
-          </div>
-        </div>
-        </div>
-        <div class="carousel-item">
-            <div class="container">
-              <div class="item-1">
-                <div class="item-1-desc">
-                  <div class="item-info">Starting at $274</div>
-                  <div class="item-title">The Best tablet collection 2023</div>
-                  <div class="item-desc">Exclusive offer -35% off this week</div>
-                  <div class="btn btn-light">Shop Now</div>
-                </div>
-                <img src="images/slider-img-2.png" alt="Los Angeles" class="d-block w-100">
-              </div>
-        </div>
-
-        </div>
-        <div class="carousel-item">
-            <div class="container">
-              <div class="item-1">
-                <div class="item-1-desc">
-                  <div class="item-info">Starting at $274</div>
-                  <div class="item-title">The Best tablet collection 2023</div>
-                  <div class="item-desc">Exclusive offer -35% off this week</div>
-                  <div class="btn btn-light">Shop Now</div>
-                </div>
-                <img src="images/slider-img-3.png" alt="Los Angeles" class="d-block w-100">
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Left and right controls/icons -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-
-  </section>
-
-  <section class="service pd-y">
+  <div class="wish-list-section">
     <div class="container">
-
-
-      <div class="service-content">
-        <div class="service-card">
-          <i class="fa fa-check fa-2x service-icon"></i>
-          <span class="service-desc">quality product</span>
-
+      <!-- <div class="items">
+        <div class="item">
+          
+          
+          
+          
+          
         </div>
-
-        <div class="service-card">
-          <i class="fa fa-shipping-fast fa-2x service-icon"></i>
-          <span class="service-desc">quality product</span>
-
-        </div>
-
-        <div class="service-card">
-          <i class="fa fa-exchange-alt fa-2x service-icon"></i>
-          <span class="service-desc">quality product</span>
-
-        </div>
-
-        <div class="service-card">
-          <i class="fa fa-phone-volume fa-2x service-icon"></i>
-          <span class="service-desc">quality product</span>
-
-        </div>
-
-      </div>
-
+      </div> -->
+      <table class="table table-hover">
+        <thead class="table-active">
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+            <th scope="col">Add Cart</th>
+            <th scope="col">Action</th>
+            
+          </tr>
+        </thead>
+        <tbody id="addItem">
+          <tr>
+            <td ><img src="images/blutooth-4.png" alt="" id="itemImg"><div class="item-title" id="itemTitle">DeepCool Air Cooler</div></td>
+            <td><div class="item-price" id="itemPrice">$80.00</div></td>
+            <td><div class="btn btn-primary" id="AddToCart">Add to cart</div></td>
+            <td><div class="item-remove" id="removeCart">	 Remove</div></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-
-  </section>
-
-
-
-  <section class="category-section pd-y">
-    <div class="container">
-
-      <div class="header-line">
-        <span class="line-title">categories</span>
-        <div class="category-line"></div>
-      </div>
-
-      <div class="category-content">
-      </div>
-
-    </div>
-  </section>
-
-  <section class="feature-section">
-
-    <div class="container">
-      <div class="header-line">
-        <span class="line-title">FEATURED PRODUCTS</span>
-        <div class="category-line"></div>
-      </div>
-
-      <div class="feature-content" id="featureCards">
-      </div>
-    </div>
-  </section>
-
-
-  <section class="special-offer pd-y ">
-    <div class="container">
-      <div class="special-offer-content">
-
-
-        <div class="special-offer">
-          <div class="overlay">
-            <div class="overlay-special-content">
-              <p class="offer-save">save 20%</p>
-              <h3 class="offer-title">special offer</h3>
-              <button class="send-offer">shop now</button>
-            </div>
-          </div>
-        </div>
-
-
-       
-
-      </div>
-
-
-    </div>
-  </section>
-
-
-  <section class="feature-section">
-
-    <div class="container">
-      <div class="header-line">
-        <span class="line-title">RECENT PRODUCTS</span>
-        <div class="category-line"></div>
-      </div>
-      <div class="feature-content" id="featureContent">
-      </div>
-    </div>
-  </section>
-
-  <section class="companies-section pd-y">
-    <div class="container">
-      <div class="companies-content">
-        <div class="box1">
-          <img src="images/vendor-1.jpg" alt="">
-        </div>
-        <div class="box1">
-          <img src="images/vendor-2.jpg" alt="">
-        </div>
-        <div class="box1">
-          <img src="images/vendor-3.jpg" alt="">
-        </div>
-        <div class="box1">
-          <img src="images/vendor-4.jpg" alt="">
-        </div>
-        <div class="box1">
-          <img src="images/vendor-5.jpg" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
+  </div>
 
   <section class="footer">
     <div class="container">
@@ -474,12 +316,8 @@
       </div>
     </div>
   </section>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/data.js"></script>
-
-
-  <script src="js/script.js"></script>
+  <script src="js/wishlist.js"></script>
 </body>
 
 </html>

@@ -8,13 +8,13 @@ function drowProductsUI() {
     <img src=${item.img} alt="camera" class="im">
    
     <span class="productName">${item.title}</span>
-    <span class="price">${item.price}</span>
+    <span class="price">${item.price}$</span>
     <div class="quantity">
       <span class="minus" onclick=funMinus(${item.id})>-</span>
       <span class="num">0${item.amount}</span>
       <span class="plus" onclick=funPlus(${item.id})>+</span>
     </div>
-    <span class="total" id="total"> ${item.total || item.price}.00$</span>
+    <span class="total" id="total"> ${item.total || item.price}$</span>
     <div class="remove" onclick=removeFromCart(${item.id})>x</div>
     
  </div>`;
@@ -37,19 +37,23 @@ let plus = document.querySelector(".plus");
 let minus = document.querySelector(".minus");
 let total = document.querySelector("#total");
 
+let subPriceDom = document.getElementById("subAmount")
+let totPriceDom = document.getElementById("totAmount")
 function funPlus(id) {
   let productsInCart = JSON.parse(localStorage.getItem("ProductsInCart"));
   for (let i = 0; i < productsInCart.length; i++) {
     if (productsInCart[i].id === id) {
       productsInCart[i].amount++;
       productsInCart[i].total =
-        productsInCart[i].amount * productsInCart[i].price;
+        (productsInCart[i].amount * productsInCart[i].price).toFixed(2);
       localStorage.setItem("ProductsInCart", JSON.stringify(productsInCart));
 
       drowProductsUI();
     }
   }
+  calcTotPrice(productsInCart)
 }
+
 
 function funMinus(id) {
   let productsInCart = JSON.parse(localStorage.getItem("ProductsInCart"));
@@ -60,11 +64,23 @@ function funMinus(id) {
       } else {
         productsInCart[i].amount--;
         productsInCart[i].total =
-          productsInCart[i].amount * productsInCart[i].price;
+          (productsInCart[i].amount * productsInCart[i].price).toFixed(2);
         localStorage.setItem("ProductsInCart", JSON.stringify(productsInCart));
       }
 
       drowProductsUI();
     }
   }
+  calcTotPrice(productsInCart)
+  
+}
+
+
+function calcTotPrice(allItems) {
+  let totPrice = 0;
+  allItems.forEach((element) => {
+    totPrice += element.amount * element.price;
+  });
+  subPriceDom.innerHTML = "$" + totPrice.toFixed(2);
+  totPriceDom.innerHTML = "$" + (totPrice + 10).toFixed(2);
 }

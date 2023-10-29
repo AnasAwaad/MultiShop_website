@@ -20,31 +20,17 @@ body {
   width: 70%;
   margin: auto;
 }
-
+ul{
+  margin:0;
+  padding:0;
+}
 ul li {
   list-style: none;
 }
 a {
   text-decoration: none;
 }
-/* @media (min-width: 768px) {
-  .container {
-    width: 95%;
-  }
-}
 
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-*/
 @media (max-width: 1200px) {
   .container {
     width: 97%;
@@ -628,6 +614,7 @@ header .pt-1-right > ul > li .drop-down ul li a:hover {
   width: calc(100% - 360px);
   height: 100vh;
   z-index: 200;
+  background-color: #00000059;
 }
 
 /* home  */

@@ -26,7 +26,8 @@
 
   <!-- Libraries Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="css/cart.css">
+
 </head>
 
 <body>
@@ -88,8 +89,7 @@
       <div class="container">
         <div class="pt-2-content">
           <div class="pt-2-logo">
-            <span class="left">multi</span>
-            <span class="right">shop</span>
+            <img src="images/logo.svg" alt="">
 
           </div>
 
@@ -101,7 +101,7 @@
 
             <div class="search-box">
               <i class="icon fa fa-search"></i>
-              <input class="txt-search" type="text" placeholder="search for products">
+              <input class="txt-search" id="txt-search" type="text" placeholder="search for products">
               <button class="btn-search" id="search-button">Search</button>
             </div>
 
@@ -117,62 +117,100 @@
       </div>
     </div>
 
-    <div class="pt-3">
 
-      <div class="container">
-        <div class="pt-3-content">
+    <div class="shopping-cart">
 
+      <div class="cart">
 
-
-
-
-          <div class="category">
-
-            <i class="icon-left fa fa-bars fa-lg"></i>
-            <span class="category-name">category</span>
-            <i class="icon-right fa fa-angle-down"></i>
-            <div class="drop-down">
-              <ul>
-                <li><a class="border-bottom" href="#">Dresses</a></li>
-                <li><a class="border-bottom" href="#">shirts</a></li>
-                <li><a class="border-bottom" href="#">Jeans</a></li>
-                <li><a class="border-bottom" href="#">Swimwear</a></li>
-                <li><a class="border-bottom" href="#">Sleepwear</a></li>
-                <li><a class="border-bottom" href="#">Sportswear</a></li>
-                <li><a class="border-bottom" href="#">Jumpsuits</a></li>
-                <li><a class="border-bottom" href="#">Blazers</a></li>
-                <li><a class="border-bottom" href="#">Jackets</a></li>
-                <li><a href="#">Shoes</a></li>
-
-              </ul>
-
-
-            </div>
-          </div>
-
-
-          <div class="bars-content">
-            <i class="fas fa-bars fa-2x "></i>
-          </div>
-
-          <nav class="pt-3-nav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="shop.html">Shop</a></li>
-              <li><a href="#">Shop details</a></li>
-              <li><a href="#">
-                  Pages
-                  <i class="icon-right fa fa-angle-down"></i>
-                </a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-
-          </nav>
+        <div class="cart-title">
+          <h3>Shopping cart</h3>
+          <i class="fa-solid fa-x" id="cart-close"></i>
         </div>
+
+        <div class="cart-items">
+          <div class="items">
+          </div>
+        </div>
+
+        <div class="cart-total">
+
+          <div class="tot-price">
+            <div class="title">Subtotal</div>
+            <div class="price">$2000.00</div>
+          </div>
+          <div class="view-carts"><a href="cart.html">VIEW CART</a></div>
+
+        </div>
+
+
+
+
       </div>
-    </div>
+      <div class="overlay"></div>
     </div>
   </header>
+  <div class="pt-3 ">
+
+    <div class="container">
+      <div class="pt-3-content">
+
+        <div class="category">
+
+          <i class="icon-left fa fa-bars fa-lg"></i>
+          <span class="category-name">category</span>
+          <i class="icon-right fa fa-angle-down"></i>
+          <div class="drop-down">
+            <ul>
+              <li><a class="border-bottom" href="#">Dresses</a></li>
+              <li><a class="border-bottom" href="#">shirts</a></li>
+              <li><a class="border-bottom" href="#">Jeans</a></li>
+              <li><a class="border-bottom" href="#">Swimwear</a></li>
+              <li><a class="border-bottom" href="#">Sleepwear</a></li>
+              <li><a class="border-bottom" href="#">Sportswear</a></li>
+              <li><a class="border-bottom" href="#">Jumpsuits</a></li>
+              <li><a class="border-bottom" href="#">Blazers</a></li>
+              <li><a class="border-bottom" href="#">Jackets</a></li>
+              <li><a href="#">Shoes</a></li>
+
+            </ul>
+
+
+          </div>
+        </div>
+        <div class="bars-content " id="bars">
+          <i class="fas fa-bars fa-2x "></i>
+        </div>
+
+        <nav class="pt-3-nav">
+          <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="shop details.html">Shop details</a></li>
+            <li><a href="cart.html">Pages</a></li>
+            <li><a href="contact(1).html">Contact</a></li>
+          </ul>
+
+        </nav>
+
+        <div class="pt-3-icons">
+          <i class="fa fa-heart heart-icon"><span>0</span></i>
+
+
+          <i class="fa fa-shopping-cart shopping-icon" id="shopping-cart-icon"><span>0</span></i>
+
+        </div>
+        <ul id="login-register">
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">Log in</a></li>
+
+        </ul>
+        <ul id="user-info">
+          <li><a href="#" id="user"></a></li>
+          <li><a href="#" id="logout">logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <main>
     <div class="container">
       <div class="cont" id="products">
@@ -188,7 +226,8 @@
         <div class="last">
           <div style="margin-bottom: 20px;">
             <span class="ll">Subtotal</span><span id="subAmount">$150 </span><br><br>
-            <span class="ll">Shipping</span>$10 <br></div>
+            <span class="ll">Shipping</span>$10 <br>
+          </div>
           <hr>
           <div style="margin-top: 20px;">
             <span class="lll">Total</span><span id="totAmount">$150 </span> <br>
@@ -284,7 +323,10 @@
 
 
 
-
+<script src="js/data.js"></script>
+<script src="js/login_register.js"></script>
+<script src="js/addToCart.js"></script>
+<script src="js/addToWishList.js"></script>
 <script src="js/cart.js">
 
 

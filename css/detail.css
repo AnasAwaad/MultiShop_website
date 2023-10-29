@@ -121,7 +121,7 @@ margin-bottom: 30px;
 }
 .new-stars{
     font-weight: 900;
-    color: #ffd333;
+    color: #FFD333;
     font-size: 80%;
     margin-bottom: 24px;
 }
@@ -185,7 +185,7 @@ form{
 } */
 .btn{
     color :#212529;
-    background-color:#FFD333 ;
+    background-color:var(--main-color); ;
     display: inline-block;
     font-weight: 400;
     text-align: center;

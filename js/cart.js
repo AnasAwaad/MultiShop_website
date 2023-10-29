@@ -1,6 +1,7 @@
+//drow products in html page
 function drowProductsUI() {
   let productsInCart = JSON.parse(localStorage.getItem("ProductsInCart"));
-  let products = document.querySelector("#products");
+  let productsDom = document.querySelector("#products");
   let items = productsInCart
     .map((item) => {
       return `
@@ -20,11 +21,11 @@ function drowProductsUI() {
  </div>`;
     })
     .join("");
-  products.innerHTML = items;
+  productsDom.innerHTML = items;
 }
-
 drowProductsUI();
 
+//remove item
 function removeFromCart(id) {
   let productsInCart = JSON.parse(localStorage.getItem("ProductsInCart"));
   let items = productsInCart.filter((item) => item.id != id);
@@ -37,24 +38,24 @@ let plus = document.querySelector(".plus");
 let minus = document.querySelector(".minus");
 let total = document.querySelector("#total");
 
-let subPriceDom = document.getElementById("subAmount")
-let totPriceDom = document.getElementById("totAmount")
+//increase amount of product by one
 function funPlus(id) {
   let productsInCart = JSON.parse(localStorage.getItem("ProductsInCart"));
   for (let i = 0; i < productsInCart.length; i++) {
     if (productsInCart[i].id === id) {
       productsInCart[i].amount++;
-      productsInCart[i].total =
-        (productsInCart[i].amount * productsInCart[i].price).toFixed(2);
+      productsInCart[i].total = (
+        productsInCart[i].amount * productsInCart[i].price
+      ).toFixed(2);
       localStorage.setItem("ProductsInCart", JSON.stringify(productsInCart));
 
       drowProductsUI();
     }
   }
-  calcTotPrice(productsInCart)
+  calcTotPrice(productsInCart);
 }
 
-
+//decrease amount of products by one
 function funMinus(id) {
   let productsInCart = JSON.parse(localStorage.getItem("ProductsInCart"));
   for (let i = 0; i < productsInCart.length; i++) {
@@ -63,20 +64,21 @@ function funMinus(id) {
         removeFromCart(id);
       } else {
         productsInCart[i].amount--;
-        productsInCart[i].total =
-          (productsInCart[i].amount * productsInCart[i].price).toFixed(2);
+        productsInCart[i].total = (
+          productsInCart[i].amount * productsInCart[i].price
+        ).toFixed(2);
         localStorage.setItem("ProductsInCart", JSON.stringify(productsInCart));
       }
 
       drowProductsUI();
     }
   }
-  calcTotPrice(productsInCart)
-  
+  calcTotPrice(productsInCart);
 }
 
-
 function calcTotPrice(allItems) {
+  let subPriceDom = document.getElementById("subAmount");
+  let totPriceDom = document.getElementById("totAmount");
   let totPrice = 0;
   allItems.forEach((element) => {
     totPrice += element.amount * element.price;
@@ -84,3 +86,5 @@ function calcTotPrice(allItems) {
   subPriceDom.innerHTML = "$" + totPrice.toFixed(2);
   totPriceDom.innerHTML = "$" + (totPrice + 10).toFixed(2);
 }
+
+

@@ -60,3 +60,5 @@ tabsarry.forEach((ele) => {
     })
 })
 window.onload=change_image;
+
+

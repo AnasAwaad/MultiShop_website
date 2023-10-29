@@ -1,292 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
-    <!-- font Awesome  -->
-    <link rel="stylesheet" href="css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <!-- font Awesome  -->
+  <link rel="stylesheet" href="css/all.min.css">
 
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet">
-  
-    <!-- master css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="checkout.css">
-  </head>
-  
-  <body>
-    <header>
-  
-      <div class="pt-1 ">
-        <div class="container">
-          <div class="pt-1-content">
-            <div class="pt-1-left">
-              <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">FAQs</a></li>
-              </ul>
-            </div>
-  
-            <div class="pt-1-right">
-              <ul>
-  
-                <li>
-                  <a href="#">EN</a>
-                  <div class="lang drop-down">
-                    <ul>
-                      <li><a href="#">FR</a></li>
-                      <li><a href="#">ER</a></li>
-                      <li><a href="#">RU</a></li>
-  
-                    </ul>
-                </li>
-                <li>
-                  <a href="#">USD</a>
-                  <div class="coins drop-down">
-                    <ul>
-                      <li><a href="#">EUR</a></li>
-                      <li><a href="#">GBP</a></li>
-                      <li><a href="#">CAD</a></li>
-  
-                    </ul>
-                  </div>
-                </li>
-  
-                <li>
-                  <a href="#">My Accout</a>
-                  <div class="my-account drop-down">
-                    <ul>
-                      <li><a href="#">Sign in</a></li>
-                      <li><a href="#">Sign up</a> </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- master css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+  <header>
+
+    <div class="pt-1 ">
+      <div class="container">
+        <div class="pt-1-content">
+          <div class="pt-1-left">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="pt-1-right">
+            <ul>
+
+              <li>
+                <a href="#">EN</a>
+                <div class="lang drop-down">
+                  <ul>
+                    <li><a href="#">FR</a></li>
+                    <li><a href="#">ER</a></li>
+                    <li><a href="#">RU</a></li>
+
+                  </ul>
+              </li>
+              <li>
+                <a href="#">USD</a>
+                <div class="coins drop-down">
+                  <ul>
+                    <li><a href="#">EUR</a></li>
+                    <li><a href="#">GBP</a></li>
+                    <li><a href="#">CAD</a></li>
+
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a href="#">My Accout</a>
+                <div class="my-account drop-down">
+                  <ul>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Sign up</a> </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-  
-      <div class=" pt-2">
-        <div class="container">
-          <div class="pt-2-content">
-            <div class="pt-2-logo">
-              <span class="left">multi</span>
-              <span class="right">shop</span>
-  
+    </div>
+
+    <div class=" pt-2">
+      <div class="container">
+        <div class="pt-2-content">
+          <div class="pt-2-logo">
+            <img src="images/logo.svg" alt="">
+
+          </div>
+
+
+
+
+
+          <div class="pt-2-search">
+
+            <div class="search-box">
+              <i class="icon fa fa-search"></i>
+              <input class="txt-search" id="txt-search" type="text" placeholder="search for products">
+              <button class="btn-search" id="search-button">Search</button>
             </div>
-  
-  
-  
-  
-  
-            <div class="pt-2-search">
-  
-              <div class="search-box">
-                <i class="icon fa fa-search"></i>
-                <input class="txt-search" type="text" placeholder="search for products">
-                <button class="btn-search" id="search-button">Search</button>
-              </div>
-  
-            </div>
-  
-  
-            <div class="pt-2-contact">
-              <p class="contact-us">customer service</p>
-              <p class="contact-phone">01129426838</p>
+
+          </div>
+
+
+          <div class="pt-2-contact">
+            <p class="contact-us">customer service</p>
+            <p class="contact-phone">01129426838</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="shopping-cart">
+
+      <div class="cart">
+
+        <div class="cart-title">
+          <h3>Shopping cart</h3>
+          <i class="fa-solid fa-x" id="cart-close"></i>
+        </div>
+
+        <div class="cart-items">
+          <div class="items">
+          </div>
+        </div>
+
+        <div class="cart-total">
+
+          <div class="tot-price">
+            <div class="title">Subtotal</div>
+            <div class="price">$2000.00</div>
+          </div>
+          <div class="view-carts"><a href="cart.html">VIEW CART</a></div>
+
+        </div>
+
+
+
+
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </header>
+  <div class="pt-3 ">
+
+    <div class="container">
+      <div class="pt-3-content">
+
+        <div class="category">
+
+          <i class="icon-left fa fa-bars fa-lg"></i>
+          <span class="category-name">category</span>
+          <i class="icon-right fa fa-angle-down"></i>
+          <div class="drop-down">
+            <ul>
+              <li><a class="border-bottom" href="#">Dresses</a></li>
+              <li><a class="border-bottom" href="#">shirts</a></li>
+              <li><a class="border-bottom" href="#">Jeans</a></li>
+              <li><a class="border-bottom" href="#">Swimwear</a></li>
+              <li><a class="border-bottom" href="#">Sleepwear</a></li>
+              <li><a class="border-bottom" href="#">Sportswear</a></li>
+              <li><a class="border-bottom" href="#">Jumpsuits</a></li>
+              <li><a class="border-bottom" href="#">Blazers</a></li>
+              <li><a class="border-bottom" href="#">Jackets</a></li>
+              <li><a href="#">Shoes</a></li>
+
+            </ul>
+
+
+          </div>
+        </div>
+        <div class="bars-content " id="bars">
+          <i class="fas fa-bars fa-2x "></i>
+        </div>
+
+        <nav class="pt-3-nav">
+          <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="shop details.html">Shop details</a></li>
+            <li><a href="cart.html">Pages</a></li>
+            <li><a href="contact(1).html">Contact</a></li>
+          </ul>
+
+        </nav>
+
+        <div class="pt-3-icons">
+          <i class="fa fa-heart heart-icon"><span>0</span></i>
+
+
+          <i class="fa fa-shopping-cart shopping-icon" id="shopping-cart-icon"><span>0</span></i>
+
+        </div>
+        <ul id="login-register">
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">Log in</a></li>
+
+        </ul>
+        <ul id="user-info">
+          <li><a href="#" id="user"></a></li>
+          <li><a href="#" id="logout">logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="identify">Home/Shop/Checkout</div>
+  <div class="check1">
+    <span class="bi">BILLING ADDRESS</span>
+    <div class="data">
+      <div class="data1">
+        <label class="la">First Name</label>
+        <input class="in" type="text" placeholder="John">
+        <label class="la">E-mail</label>
+        <input class="in" type="text" placeholder="example@email.com">
+        <label class="la">Address Line 1</label>
+        <input class="in" type="text" placeholder="123 Street">
+        <label class="la">Country</label>
+        <select class="int" id="">
+          <option selected>United States</option>
+          <option>Egypt</option>
+          <option>Algeria</option>
+        </select>
+        <label class="la">State</label>
+        <input class="in" type="text" placeholder="New York">
+      </div>
+      <div class="data2">
+        <label class="la">Last Name</label>
+        <input class="in" type="text" placeholder="Doe">
+        <label class="la">Mobile No</label>
+        <input class="in" type="text" placeholder="+123 456 789">
+        <label class="la">Address Line 2</label>
+        <input class="in" type="text" placeholder="123 Street">
+        <label class="la">City</label>
+        <input class="in" type="text" placeholder="New York">
+        <label class="la">ZIP Code</label>
+        <input class="in" type="text" placeholder="123">
+      </div>
+
+    </div>
+    <div class="ch">
+      <input type="checkbox" class="create" name="createAccount"> <span class="hey">Create an account</span> <br><br>
+      <input type="checkbox" class="create" name="Ship"><span class="hey">Ship to different address</span>
+    </div>
+  </div>
+
+  <div class="check2">
+    <span class="bi">ORDER TOTAL</span>
+    <div class="last">
+      <div class="last1">
+        <span class="pp">Products</span><br>
+        <span class="ll">Product Name 1 <span class="pl">$150 </span></span><br>
+        <span class="ll">Product Name 2 <span class="pl">$150 </span></span> <br>
+        <span class="ll">Product Name 3 <span class="pl">$150 </span></span> <br>
+        <hr><br>
+        <span class="ll">Subtotal <span class="pll">$150</span></span> <br>
+        <span class="ll">Shipping<span class="pll">$10 </span></span><br>
+        <hr><br>
+        <span class="lll">Total<span class="pll">$160</span></span> <br>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="check22">
+    <span class="bi">PAYMENT</span>
+    <div class="">
+      <span class="las"><input class="rr" name="rr" type="radio"> Paypal </span>
+      <span class="las"><input class="rr" name="rr" type="radio"> Direct Check </span>
+      <span class="las"><input class="rr" name="rr" type="radio"> Bank Transfer </span>
+    </div>
+    <div class="place">Place Order</div>
+  </div>
+
+
+
+  </div>
+  <div class="check11">
+    <span class="bi">SHIPPING ADDRESS</span>
+    <div class="data">
+      <div class="data1">
+        <label class="la">First Name</label>
+        <input class="in" type="text" placeholder="John">
+        <label class="la">E-mail</label>
+        <input class="in" type="text" placeholder="example@email.com">
+        <label class="la">Address Line 1</label>
+        <input class="in" type="text" placeholder="123 Street">
+        <label class="la">Country</label>
+        <select class="int" id="">
+          <option selected>United States</option>
+          <option>Egypt</option>
+          <option>Algeria</option>
+        </select>
+        <label class="la">State</label>
+        <input class="in" type="text" placeholder="New York">
+      </div>
+      <div class="data2">
+        <label class="la">Last Name</label>
+        <input class="in" type="text" placeholder="Doe">
+        <label class="la">Mobile No</label>
+        <input class="in" type="text" placeholder="+123 456 789">
+        <label class="la">Address Line 2</label>
+        <input class="in" type="text" placeholder="123 Street">
+        <label class="la">City</label>
+        <input class="in" type="text" placeholder="New York">
+        <label class="la">ZIP Code</label>
+        <input class="in" type="text" placeholder="123">
+      </div>
+    </div>
+
+  </div>
+  <div class="foot">
+    <section class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="contact">
+            <h3 class="contact-title">GET IN TOUCH</h3>
+            <p class="contact-desc">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed
+              dolor.
+              Rebum tempor no vero est magna amet no</p>
+            <ul>
+              <li>
+                <i class="icon fa fa-map-marker-alt"></i>
+                <span>123 Street, New York, USA</span>
+              </li>
+              <li>
+                <i class="icon fa fa-envelope"></i>
+                <span>info@example.com</span>
+              </li>
+              <li>
+                <i class="icon fa fa-phone-alt"></i>
+                <span>+012 345 67890</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="quick-shop">
+            <h3 class="quick-title">QUICK SHOP</h3>
+            <ul>
+              <li><i class="fa fa-angle-right"></i><a href="#">Home</a></li>
+              <li><i class="fa fa-angle-right"></i><a href="#">Our Shop</a></li>
+              <li><i class="fa fa-angle-right"></i><a href="#">Shop Detail</a></li>
+              <li><i class="fa fa-angle-right"></i><a href="#">Shopping Cart</a></li>
+              <li><i class="fa fa-angle-right"></i><a href="#">Checkout</a></li>
+              <li><i class="fa fa-angle-right"></i><a href="#">Contact Us</a></li>
+
+            </ul>
+          </div>
+
+          <div class="myaccount">
+            <h3 class="myaccount-title">MY ACCOUNT</h3>
+            <ul>
+              <li><i class="fa fa-angle-right"></i><a href="#">Home</a></li>
+              <li><i class="fa fa-angle-right"></i><a href="#">Our Shop</a></li>
+              <li><i class="fa fa-angle-right"></i><a href="#">Shop Detail</a></li>
+              <li><i class="fa fa-angle-right"></i><a href="#">Shopping Cart</a></li>
+              <li><i class="fa fa-angle-right"></i><a href="#">Checkout</a></li>
+              <li><i class="fa fa-angle-right"></i><a href="#">Contact Us</a></li>
+
+            </ul>
+          </div>
+
+          <div class="seller">
+            <h3 class="seller-title">NEWSLETTER</h3>
+            <p class="seller-desc">Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
+
+            <input class="seller-input" type="text" placeholder="Your Email Address">
+            <button class="btn-seller">Sign Up</button>
+            <p class="seller-subtitle">FOLLOW US</p>
+            <div class="icons">
+              <i class="icon fab fa-facebook-f fa-lg"></i>
+              <i class="icon fab fa-twitter fa-lg"></i>
+              <i class="icon fab fa-linkedin fa-lg"></i>
+              <i class="icon fab fa-instagram fa-lg"></i>
+
             </div>
           </div>
-  
+
+        </div>
+        <hr>
+        <div class="footer-pt-2">
+          <p>&copy; <span class="domain"><a href="#">Domain</a></span>All Rights Reserved. Designed by <span
+              class="codex"><a href="#">HTML Codex</a></span></p>
+          <img src="images/payments.png" alt="">
         </div>
       </div>
-  
-    </header>
-    <div class="identify">Home/Shop/Checkout</div>
-    <div class="check1">
-        <span class="bi">BILLING ADDRESS</span>
-        <div class="data">
-            <div class="data1">
-                <label  class="la">First Name</label> 
-                <input class="in" type="text" placeholder="John">
-                <label  class="la">E-mail</label> 
-                <input class="in" type="text" placeholder="example@email.com">
-                <label  class="la">Address Line 1</label>
-                <input class="in" type="text" placeholder="123 Street">
-                <label  class="la">Country</label>
-                <select class="int" id="">
-                    <option selected>United States</option>
-                    <option >Egypt</option>
-                    <option >Algeria</option>
-                </select> 
-                <label class="la" >State</label>
-                <input class="in" type="text" placeholder="New York">
-            </div>
-            <div class="data2">
-                <label  class="la">Last Name</label>
-                <input class="in" type="text" placeholder="Doe">
-                <label  class="la">Mobile No</label>
-                <input class="in" type="text" placeholder="+123 456 789">
-                <label class="la">Address Line 2</label>
-                <input class="in" type="text" placeholder="123 Street">
-                <label class="la">City</label>
-                <input class="in" type="text" placeholder="New York">
-                <label class="la">ZIP Code</label>
-                <input class="in" type="text" placeholder="123">
-            </div>
+    </section>
 
-        </div>
-        <div class="ch"> 
-            <input type="checkbox" class="create" name="createAccount"> <span class="hey">Create an account</span> <br><br>
-            <input type="checkbox" class="create" name="Ship" ><span class="hey">Ship to different address</span>
-        </div>
-    </div>
-    
-    <div class="check2">
-            <span class="bi">ORDER TOTAL</span>
-            <div class="last">
-                <div class="last1">
-                    <span class="pp">Products</span><br>
-                    <span class="ll">Product Name 1 <span class="pl">$150 </span></span><br>
-                    <span class="ll">Product Name 2 <span class="pl">$150 </span></span> <br>
-                    <span class="ll">Product Name 3 <span class="pl">$150 </span></span> <br>
-                    <hr><br>
-                    <span class="ll">Subtotal <span class="pll">$150</span></span> <br>
-                    <span class="ll">Shipping<span class="pll">$10 </span></span><br><hr><br>
-                    <span class="lll">Total<span class="pll">$160</span></span> <br>
-                </div>
-          </div>
-          
-          </div>
-          
-          <div class="check22">
-            <span class="bi">PAYMENT</span>
-            <div class="">
-               <span class="las"><input class="rr" name="rr" type="radio"> Paypal </span> 
-               <span class="las"><input class="rr" name="rr" type="radio"> Direct Check </span> 
-               <span class="las"><input class="rr" name="rr" type="radio"> Bank Transfer </span> 
-            </div>
-            <div class="place">Place Order</div>
-          </div>
-            
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/login_register.js"></script>
+  <script src="js/addToCart.js"></script>
 
-
-    </div>
-    <div class="check11">
-        <span class="bi">SHIPPING ADDRESS</span>
-        <div class="data">
-            <div class="data1">
-                <label  class="la">First Name</label> 
-                <input class="in" type="text" placeholder="John">
-                <label  class="la">E-mail</label> 
-                <input class="in" type="text" placeholder="example@email.com">
-                <label  class="la">Address Line 1</label>
-                <input class="in" type="text" placeholder="123 Street">
-                <label  class="la">Country</label>
-                <select class="int" id="">
-                    <option selected>United States</option>
-                    <option >Egypt</option>
-                    <option >Algeria</option>
-                </select> 
-                <label class="la" >State</label>
-                <input class="in" type="text" placeholder="New York">
-            </div>
-            <div class="data2">
-                <label  class="la">Last Name</label>
-                <input class="in" type="text" placeholder="Doe">
-                <label  class="la">Mobile No</label>
-                <input class="in" type="text" placeholder="+123 456 789">
-                <label class="la">Address Line 2</label>
-                <input class="in" type="text" placeholder="123 Street">
-                <label class="la">City</label>
-                <input class="in" type="text" placeholder="New York">
-                <label class="la">ZIP Code</label>
-                <input class="in" type="text" placeholder="123">
-            </div> </div>
-
-        </div>
-        <div class="foot">
-            <section class="footer">
-                <div class="container">
-                  <div class="footer-content">
-                    <div class="contact">
-                      <h3 class="contact-title">GET IN TOUCH</h3>
-                      <p class="contact-desc">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor.
-                        Rebum tempor no vero est magna amet no</p>
-                      <ul>
-                        <li>
-                          <i class="icon fa fa-map-marker-alt"></i>
-                          <span>123 Street, New York, USA</span>
-                        </li>
-                        <li>
-                          <i class="icon fa fa-envelope"></i>
-                          <span>info@example.com</span>
-                        </li>
-                        <li>
-                          <i class="icon fa fa-phone-alt"></i>
-                          <span>+012 345 67890</span>
-                        </li>
-                      </ul>
-                    </div>
-            
-                    <div class="quick-shop">
-                      <h3 class="quick-title">QUICK SHOP</h3>
-                      <ul>
-                        <li><i class="fa fa-angle-right"></i><a href="#">Home</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#">Our Shop</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#">Shop Detail</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#">Shopping Cart</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#">Checkout</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#">Contact Us</a></li>
-            
-                      </ul>
-                    </div>
-            
-                    <div class="myaccount">
-                    <h3 class="myaccount-title">MY ACCOUNT</h3>
-                      <ul>
-                        <li><i class="fa fa-angle-right"></i><a href="#">Home</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#">Our Shop</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#">Shop Detail</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#">Shopping Cart</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#">Checkout</a></li>
-                        <li><i class="fa fa-angle-right"></i><a href="#">Contact Us</a></li>
-            
-                      </ul>
-                    </div>
-                    
-                    <div class="seller">
-                      <h3 class="seller-title">NEWSLETTER</h3>
-                      <p  class="seller-desc">Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
-                      
-                      <input class="seller-input" type="text" placeholder="Your Email Address">
-                      <button class="btn-seller">Sign Up</button>
-                      <p class="seller-subtitle">FOLLOW US</p>
-                      <div class="icons">
-                        <i class="icon fab fa-facebook-f fa-lg"></i>
-                        <i class="icon fab fa-twitter fa-lg"></i>
-                        <i class="icon fab fa-linkedin fa-lg"></i>
-                        <i class="icon fab fa-instagram fa-lg"></i>
-                        
-                      </div>
-                    </div>
-            
-                  </div>
-                  <hr>
-                  <div class="footer-pt-2">
-                    <p>&copy; <span class="domain"><a href="#">Domain</a></span>All Rights Reserved. Designed by <span class="codex"><a href="#">HTML Codex</a></span></p>
-                    <img src="images/payments.png" alt="">
-                  </div>
-                </div>
-              </section>
-            
-        </div>
- 
 </body>
+
 </html>

@@ -209,20 +209,14 @@
     <div class="pt-5">
       <div class="pt-5-photo">
         <div class="pt-5-photo-img">
-          <img src="images/product-1.jpg" alt="images" class="slider-image">
-          <a class="carsoul-prev left" href="#" onclick="prev()">
-            <i class="fa fa-2x fa-angle-left c-b"></i>
-          </a>
-          <a class="carsoul-next right-0" href="#" onclick="next()">
-            <i class="fa fa-2x fa-angle-right c-b"></i>
-          </a>
+          <img src="images/product-1.jpg" alt="images" class="slider-image" style="width: 100%;">
         </div>
       </div>
       <div class="pt-5-evalution bg-white">
         <div class="pt-5-evalution-container">
-          <h3 class="product-name c-black">product name goes Here</h3>
+          <h3 class="product-name c-black" id="productName">product name goes Here</h3>
 
-          <div class="new-stars ">
+          <div class="new-stars">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -230,33 +224,33 @@
             <i class="fa fa-star"></i>
             <span class="c-b">(99) reviews</span>
           </div>
-          <span class="product-money c-b"> $150.00</span>
+          <span class="product-money c-b" id="money"> $150.00</span>
           <p class="pt-5-evalution-pargraph c-b">
             Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr er ea. Sanc ipsum et, labore clita lorem magna
             duo dolor no sea Nonumyz</p>
-          <div class="sizes-container">
+          <div class="sizes-container" id="sizes-container">
             <div class="sizes c-b">
               <span>sizes : </span>
               <form>
                 <div class="custom-radio">
-                  <input type="radio" class="input" id="box1" name="size">
-                  <label class="label">XS</label>
+                  <input type="radio" class="input" id="box1" name="size" value="32GB">
+                  <label class="label">32GB</label>
                 </div>
                 <div class="custom-radio">
-                  <input type="radio" class="input" id="box2" name="size">
-                  <label class="label">S</label>
+                  <input type="radio" class="input" id="box2" name="size"value="64GB">
+                  <label class="label">64GB</label>
                 </div>
                 <div class="custom-radio">
-                  <input type="radio" class="input" id="box3" name="size">
-                  <label class="label">M</label>
+                  <input type="radio" class="input" id="box3" name="size"value="128GB">
+                  <label class="label">128GB</label>
                 </div>
                 <div class="custom-radio">
-                  <input type="radio" class="input" id="box4" name="size">
-                  <label class="label">L</label>
+                  <input type="radio" class="input" id="box4" name="size"value="256GB">
+                  <label class="label">256GB</label>
                 </div>
                 <div class="custom-radio">
-                  <input type="radio" class="input" id="box5" name="size">
-                  <label class="label">XL</label>
+                  <input type="radio" class="input" id="box5" name="size" value="512GB">
+                  <label class="label">512GB</label>
                 </div>
               </form>
             </div>
@@ -266,23 +260,23 @@
               <span>colors : </span>
               <form>
                 <div class="custom-radio">
-                  <input type="radio" class="input" id="box1" name="size">
+                  <input type="radio" class="input" id="box1-color" name="color" value="red">
                   <label class="label">Red</label>
                 </div>
                 <div class="custom-radio">
-                  <input type="radio" class="input" id="box2" name="size">
-                  <label class="label">Green</label>
+                  <input type="radio" class="input" id="box2-color" name="color"value="gold">
+                  <label class="label">gold</label>
                 </div>
                 <div class="custom-radio">
-                  <input type="radio" class="input" id="box3" name="size">
+                  <input type="radio" class="input" id="box3-color" name="color"value="blue">
                   <label class="label">Blue</label>
                 </div>
                 <div class="custom-radio">
-                  <input type="radio" class="input" id="box4" name="size">
+                  <input type="radio" class="input" id="box4-color" name="color" value="black">
                   <label class="label">Black</label>
                 </div>
                 <div class="custom-radio">
-                  <input type="radio" class="input" id="box5" name="size">
+                  <input type="radio" class="input" id="box5-color" name="color" value="white">
                   <label class="label">White</label>
                 </div>
               </form>
@@ -291,22 +285,22 @@
           <div class="cart-main">
             <div class="cart-number">
               <div class="input-btn">
-                <button class="btn minus-button ">
+                <span class="btn minus-button "  >
                   <i class="fa fa-minus">
 
                   </i>
-                </button>
+                </span>
               </div>
-              <input type="text" class="text-control c-b " value="1">
+              <div class="text-control c-b ">0</div>
               <div class="input-btn">
-                <button class="btn minus-button c-b">
+                <button class="btn plus-button c-" >
                   <i class="fa fa-plus ">
 
                   </i>
                 </button>
               </div>
             </div>
-            <button class="btn px-16 ">
+            <button class="btn px-16 "  onclick="addCart()">
               <i class="fa fa-shopping-cart mr-8">
 
               </i>
@@ -336,7 +330,7 @@
       </div>
     </div>
     <div class="pt-6">
-      <div class="bg-white p-30 ">
+      <div class="bg-white p-30 " style="min-width: 100%;">
         <ul class="tabs">
           <li class="active" href="#tab1" data-content=".tab-pane1">Description</li>
           <li href="#tab2" data-content=".tab-pane2">Information</li>
@@ -395,9 +389,9 @@
 
             <div class="new-stars ">
               <span class="c-b" style="font-size: 18px; color:#6C757D; font-weight: 400;"> Your Rating * : </span>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="far fa-star chek"></i>
+              <i class="far fa-star " ></i>
+              <i class="far fa-star "></i>
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
 
@@ -420,14 +414,6 @@
         </div>
       </div>
     </div>
-
-    <div class="pt-7">
-      <span class="pt-7-span">
-        you may also like
-      </span>
-    </div>
-  </div>
-
   <section class="footer">
     <div class="container">
       <div class="footer-content">

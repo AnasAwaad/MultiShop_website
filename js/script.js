@@ -25,7 +25,7 @@ function drowProductsUI() {
       <ul class="overlay-content">
         <li  onclick="addCart(${item.id})"><i class="icon first-icon fa fa-shopping-cart fa-lg"></i></li>
         <li onclick="addToWishList(${item.id})"><i class="icon sec-icon fa fa-heart fa-lg"></i></li>
-        <li onclick="details()"><i class="icon third-icon fa fa-sync fa-lg"></i></li>
+        <li onclick="details(${item.id})"><i class="icon third-icon fa fa-sync fa-lg"></i></li>
         <li onclick="search('+${item.title}+')" ><i class="icon forth-icon fa fa-search fa-lg"  ></i></li>
       </ul>
     </div>
@@ -94,6 +94,8 @@ function search(title) {
   }
 }
 
-function details() {
+function details(id) {
+  let choosenItem = products.find(item => item.id == id);
+  localStorage.setItem("productDetails",JSON.stringify(choosenItem));
   window.location = "shop details.html";
 }

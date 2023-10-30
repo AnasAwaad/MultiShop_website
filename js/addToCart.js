@@ -6,7 +6,6 @@ let shoppingCartIcon = document.querySelector("#shopping-cart-icon");
 let shoppingCartIconval = document.querySelector("#shopping-cart-icon span");
 let totPriceDom = document.querySelector(".shopping-cart .tot-price .price");
 
-
 //update products in shopping cart when reload page
 function getFromStorage() {
   let productsInCart = JSON.parse(localStorage.getItem("ProductsInCart"));
@@ -41,7 +40,7 @@ function getFromStorage() {
 
 getFromStorage();
 
-//add one product to shopping cart 
+//add one product to shopping cart
 function addCart(itemId) {
   if (localStorage.getItem("name")) {
     //get all products from database
@@ -81,8 +80,7 @@ function addCart(itemId) {
   }
 }
 
-
-//calculate total amount of products 
+//calculate total amount of products
 function calcTotAmount(allItems) {
   let counter = 0;
   allItems.forEach((element) => {
@@ -91,7 +89,7 @@ function calcTotAmount(allItems) {
   shoppingCartIconval.innerHTML = counter;
 }
 
-//calculate total price of products 
+//calculate total price of products
 function calcTotPrice(allItems) {
   let totPrice = 0;
   allItems.forEach((element) => {
@@ -105,7 +103,11 @@ function removeFromCart(itemId) {
   let productsInCart = JSON.parse(localStorage.getItem("ProductsInCart"));
   let items = productsInCart.filter((item) => item.id != itemId);
   localStorage.setItem("ProductsInCart", JSON.stringify(items));
-
+  let productDetails = JSON.parse(localStorage.getItem("productDetails"));
+  if (itemId == productDetails.id) {
+    productDetails.amount = 0;
+    localStorage.setItem("productDetails", JSON.stringify(productDetails));
+  }
   shoppingCartItems.innerHTML = "";
   items.map((item) => {
     shoppingCartItems.innerHTML += `
@@ -135,7 +137,7 @@ cartClose.addEventListener("click", function () {
 });
 
 shoppingCartIcon.addEventListener("click", function () {
-  let shoppingCartItems = localStorage.getItem("ProductsInCart");
+  let shoppingCartItems = JSON.parse(localStorage.getItem("ProductsInCart"));
 
   if (shoppingCartItems.length > 0) {
     if (shoppingCart.style.display == "block") {
@@ -145,4 +147,3 @@ shoppingCartIcon.addEventListener("click", function () {
     }
   }
 });
-

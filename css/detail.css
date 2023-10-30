@@ -94,19 +94,6 @@ margin-bottom: 30px;
     height: 500px;
 }
 
-.carsoul-prev,.carsoul-next{
-    position: absolute;
-    width:15%;
-    top: 0;
-    bottom: 0;
-    opacity: 0.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    cursor: pointer;
-}
 .pt-5-photo-img a:hover{
     font-weight: 700;
 }
@@ -288,24 +275,4 @@ background-color: #dedede;
 }
 /*.....................................
   end of description and information
-  ......................................  */
-  /*.....................................
-  clothes section
-  ......................................  */
-.pt-7{
-    width: 100%;
-    padding: 48px 15px;
-}
-.pt-7-span{
-text-transform: uppercase;
-margin-bottom: 24px;
-position: relative;
-font-weight: 700;
-font-size: 31px;
-line-height: 1.2;
-color: #3D464D;
-padding-right: 16px;
-}
-/*.....................................
-  end of clothes section
   ......................................  */

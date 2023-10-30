@@ -30,7 +30,9 @@ function removeFromCart(id) {
   let productsInCart = JSON.parse(localStorage.getItem("ProductsInCart"));
   let items = productsInCart.filter((item) => item.id != id);
   localStorage.setItem("ProductsInCart", JSON.stringify(items));
+  calcTotAmount(items);
   drowProductsUI();
+  
 }
 
 let num = document.querySelector(".num");
@@ -53,6 +55,8 @@ function funPlus(id) {
     }
   }
   calcTotPrice(productsInCart);
+  calcTotAmount(productsInCart);
+  
 }
 
 //decrease amount of products by one
@@ -74,6 +78,7 @@ function funMinus(id) {
     }
   }
   calcTotPrice(productsInCart);
+  calcTotAmount(productsInCart);
 }
 
 function calcTotPrice(allItems) {
